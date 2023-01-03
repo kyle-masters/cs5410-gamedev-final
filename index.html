@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div id = "game">
+    <div id = "main-menu" class = "screen">
+        <h1 class = "title">KM Tower Defense</h1>
+        <ul class = "menu">
+            <li><button id = "new-game-button">New&nbsp;Game</button></li>
+            <li><button id = "high-scores-button">High&nbsp;Scores</button></li>
+            <li><button id = "controls-button">Controls</button></li>
+            <li><button id = "credits-button">Credits</button></li>
+        </ul>
+    </div>
+    <div id = "game-play" class = "screen">
+        <canvas id = "myCanvas" width="960px" height="800px"></canvas>
+    </div>
+    <div id = "high-scores" class = "screen">
+        <h1>High Scores</h1>
+        <ol id = "high-scores-list">
+            <li id="high-score-1" class = "high-score"></li>
+            <li id="high-score-2" class = "high-score"></li>
+            <li id="high-score-3" class = "high-score"></li>
+            <li id="high-score-4" class = "high-score"></li>
+            <li id="high-score-5" class = "high-score"></li>
+        </ol>
+        <ul class = "menu">
+            <li><button id = "high-scores-back-button">Back</button></li>
+        </ul>
+    </div>
+    <div id = "controls" class = "screen">
+        <h1 class = "title">Controls</h1>
+        <ul class = "menu">
+            <li><button id = "upgrade-tower-button">Upgrade Tower - </button></li>
+            <li><button id = "sell-tower-button">Sell Tower - </button></li>
+            <li><button id = "start-next-level-button">Start Next Level - </button></li>
+            <li><button id = "mute-music-button">Mute Music - </button></li>
+        </ul>
+        <ul class = "menu">
+            <li><button id = "controls-back-button">Back</button></li>
+        </ul>
+    </div>
+    <div id = "credits" class = "screen">
+        <h1>Credits</h1>
+        <div class="scroll-left">
+            <p>
+                Developed by <br>
+                Kyle Masters <br>
+                for CS 5410 at Utah State University <br> <br>
+                Featuring: <br>
+                Music by Matthew Pablo - http://www.matthewpablo.com <br> <br>
+                Assets: <br>
+                Bat by bagzie - https://opengameart.org/content/bat-sprite <br>
+                Arrow by Michael J Pierce - FoxTango.Tumblr.com <br>
+                Beetle by Stephen "Redshrike" Challener - https://opengameart.org/content/lpc-beetle <br>
+                Bomb by truezipp - https://opengameart.org/content/bomb-0 <br>
+                Coin by BizmasterStudios - http://bizmasterstudios.deviantart.com/ <br>
+                King Cobra by Jordan Irwin (AntumDeluge) - https://opengameart.org/node/20678 <br>
+                Laser by Wenrexa - https://opengameart.org/content/assets-free-laser-bullets-pack-2020 <br>
+                Magic Orb by Flowly - https://opengameart.org/content/pixel-orbs <br>
+                Smoke by KnoblePersona - https://opengameart.org/content/smoke-fire-animated-particle-16x16 <br> <br>
+                Sounds: <br>
+                Explosion, Mixed/Bomb Towers Shoot, Sell Tower by DamagedPanda - https://opengameart.org/content/100-plus-game-sound-effects-wavoggm4a <br>
+                Tower Build/Upgrade by wobbleboxx - https://opengameart.org/content/level-up-power-up-coin-get-13-sounds <br>
+                Monster Death by Ogrebane - https://opengameart.org/content/monster-sound-pack-volume-1 <br>
+                Guided Tower Shoot by p0ss - https://opengameart.org/content/spell-sounds-starter-pack <br>
+                Projectile Tower Shoot by Ogrebane - https://opengameart.org/content/battle-sound-effects
+            </p>
+        </div>
+        <ul class = "menu">
+            <li><button id = "credits-back-button">Back</button></li>
+        </ul>
+    </div>
+</div>
+
+<script data-main = "scripts/loader" src = "scripts/require.js"></script>
+
+</body>
+</html>
